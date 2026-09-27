@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Piel Inversa — Cronograma de Redes</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4efe9; --bg2:#ffffff; --ink:#1c1815; --ink-soft:#5a5049;
+  --accent:#a8402c; --accent-soft:#e8d9c9; --line:#ddd0c0;
+  --phase1:#a8402c; --phase2:#5c6b4f; --phase3:#c98a2c; --phase4:#1c1815;
+  --font-serif:'Fraunces',serif; --font-sans:'Inter',sans-serif;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161310; --bg2:#1f1b17; --ink:#f2ece4; --ink-soft:#c7bcae;
+    --accent:#e8724f; --accent-soft:#332621; --line:#3a322b;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161310; --bg2:#1f1b17; --ink:#f2ece4; --ink-soft:#c7bcae;
+  --accent:#e8724f; --accent-soft:#332621; --line:#3a322b;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--bg); color:var(--ink); font-family:var(--font-sans);
+  line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px; margin:0 auto; padding:48px 24px 80px;}
+header.hero{text-align:center; margin-bottom:56px;}
+.kicker{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:600;}
+h1{font-family:var(--font-serif); font-size:clamp(32px,6vw,52px); font-weight:600; font-style:italic; margin:8px 0 4px; letter-spacing:-.01em;}
+.sub{color:var(--ink-soft); font-size:15px; max-width:620px; margin:0 auto;}
+h2{font-family:var(--font-serif); font-size:26px; font-weight:700; margin:0 0 6px; border-bottom:2px solid var(--line); padding-bottom:10px;}
+h3{font-family:var(--font-sans); font-size:15px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--accent); margin:22px 0 8px;}
+section{margin-bottom:52px;}
+p{margin:8px 0; color:var(--ink);}
+.lede{color:var(--ink-soft); font-size:15px; margin-bottom:20px;}
+.card{background:var(--bg2); border:1px solid var(--line); border-radius:14px; padding:20px 22px;}
+.grid{display:grid; gap:14px;}
+.grid.cols-2{grid-template-columns:1fr 1fr;}
+@media(max-width:620px){.grid.cols-2{grid-template-columns:1fr;}}
+.pillar{background:var(--bg2); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:10px; padding:14px 16px;}
+.pillar b{display:block; font-size:14.5px; margin-bottom:3px;}
+.pillar span{font-size:13.5px; color:var(--ink-soft);}
+table{width:100%; border-collapse:collapse; font-size:13.5px;}
+.tablewrap{overflow-x:auto; border:1px solid var(--line); border-radius:12px;}
+th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+th{background:var(--accent-soft); font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink); white-space:nowrap;}
+tr:last-child td{border-bottom:none;}
+.phase-tag{display:inline-block; padding:2px 9px; border-radius:20px; font-size:11px; font-weight:600; color:#fff; white-space:nowrap;}
+.p1{background:var(--phase1);} .p2{background:var(--phase2);} .p3{background:var(--phase3);} .p4{background:var(--phase4);}
+.fmt{font-size:12px; color:var(--ink-soft); font-style:italic;}
+.week-title{font-family:var(--font-serif); font-size:19px; font-weight:600; margin:34px 0 10px; display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+.week-title .dates{font-family:var(--font-sans); font-size:13px; color:var(--ink-soft); font-weight:500;}
+.checklist{margin:0; padding-left:20px; font-size:14px;}
+.checklist li{margin-bottom:6px;}
+.quote{font-family:var(--font-serif); font-style:italic; font-size:19px; color:var(--accent); text-align:center; margin:0 0 40px; line-height:1.4;}
+footer{text-align:center; color:var(--ink-soft); font-size:12.5px; margin-top:40px; border-top:1px solid var(--line); padding-top:20px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">Plan de contenido digital</div>
+  <h1>La Piel Inversa</h1>
+  <p class="sub">Estrategia de redes, creada por lxs estudiantes de 9° y 10° semestre para visibilizar el trabajo de un semestre completo. Dirección presencial: Martha Echavarría. Estreno: primera semana de noviembre.</p>
+</header>
+
+<p class="quote">"La transformación constante en la cotidianidad — el ego frente a la poca empatía con el otro."</p>
+<div class="card" style="text-align:center; margin:-24px 0 40px; border-style:dashed;">
+  <p style="font-size:13px; color:var(--ink-soft); margin:0"><b style="color:var(--accent)">✎ Texto editable</b> — este eje conceptual todavía está en construcción. Reemplázalo cuando la propuesta se cierre (ver sección 8, "Cómo editar").</p>
+</div>
+
+<section>
+  <h2>1. Identidad y perfil</h2>
+  <p class="lede">Instagram como canal principal, con cruce a TikTok y difusión interna por WhatsApp/estados. La estética debe sostener la metáfora: piel, superficie, reverso, textura — nunca literal.</p>
+  <div class="card grid cols-2">
+    <div>
+      <h3>Perfil</h3>
+      <p style="font-size:14px">@lapielinversa_udea (o similar disponible)<br>
+      Foto de perfil: fragmento de piel/textura en macro, alto contraste.<br>
+      Bio: "Creación colectiva de 19 estudiantes de Danza UdeA · Dir. Martha Echavarría · Estreno / primera semana de noviembre · 🎟️ enlace abajo"<br>
+      Link en bio: linktree con boletería, sinopsis y créditos.</p>
+    </div>
+    <div>
+      <h3>Historias destacadas</h3>
+      <p style="font-size:14px">— Concepto<br>— Elenco (19 bailarinxs)<br>— Proceso<br>— Ficha técnica<br>— Boletería / Cómo llegar</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>2. Pilares de contenido</h2>
+  <div class="grid cols-2">
+    <div class="pillar"><b>Concepto</b><span>Cápsulas breves que traducen "piel inversa" — cambio, ego, empatía — sin explicar de más. Generan curiosidad, no respuesta.</span></div>
+    <div class="pillar"><b>Proceso / detrás de cámara</b><span>Ensayos, correcciones de Martha, sudor, repetición. Humaniza el trabajo de los 19 intérpretes.</span></div>
+    <div class="pillar"><b>Elenco</b><span>Perfiles cortos de bailarinxs: quién es, qué mueve en esta obra, una frase propia sobre el eje conceptual.</span></div>
+    <div class="pillar"><b>Otras facultades</b><span>Contenido pensado para quien no es de artes: qué es la Lic. en Danza, por qué este proceso importa, invitación directa a sentirse parte.</span></div>
+    <div class="pillar"><b>Convocatoria / BTL</b><span>Intervenciones físicas en la universidad que empujan tráfico a Instagram y venta de boletería.</span></div>
+    <div class="pillar"><b>Lanzamiento</b><span>Countdown, tráiler, póster, ficha técnica, logística de asistencia.</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>3. Formatos y duración</h2>
+  <div class="tablewrap">
+    <table>
+      <tr><th>Formato</th><th>Duración</th><th>Uso</th></tr>
+      <tr><td>Reel — teaser movimiento</td><td>8–15 seg</td><td>Fragmento de coreografía, sin contexto, loopeable.</td></tr>
+      <tr><td>Reel — proceso/BTS</td><td>20–40 seg</td><td>Ensayo, corrección, transición de calentamiento a escena.</td></tr>
+      <tr><td>Carrusel</td><td>4–7 slides</td><td>Contenido conceptual o educativo sobre la obra.</td></tr>
+      <tr><td>Entrevista corta</td><td>45–90 seg</td><td>Fragmento editado de entrevista a intérprete o a Martha.</td></tr>
+      <tr><td>Entrevista larga</td><td>4–8 min</td><td>IGTV / YouTube, para público ya interesado (no en feed principal).</td></tr>
+      <tr><td>Historia interactiva</td><td>Instantánea</td><td>Encuestas, countdown, preguntas, votaciones.</td></tr>
+      <tr><td>BTL en vivo</td><td>2–5 min de intervención, clips de 10–20 seg</td><td>Grabación de la intervención en espacio universitario.</td></tr>
+      <tr><td>Post estático</td><td>—</td><td>Póster, ficha técnica, créditos, anuncio de boletería.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>4. Cronograma semanal</h2>
+  <p class="lede">
+    <span class="phase-tag p1">Fase 1</span> Expectativa &nbsp;
+    <span class="phase-tag p2">Fase 2</span> Proceso &nbsp;
+    <span class="phase-tag p3">Fase 3</span> Lanzamiento &nbsp;
+    <span class="phase-tag p4">Fase 4</span> Estreno
+  </p>
+
+  <div class="week-title">Semana 1 <span class="dates">Lun 28 sep – Dom 4 oct — <span class="phase-tag p1">Expectativa</span></span></div>
+  <div class="tablewrap"><table>
+    <tr><th>Día</th><th>Pieza</th><th>Formato</th><th>Objetivo</th></tr>
+    <tr><td>Lun</td><td>Apertura de perfil, foto de portada + bio activa</td><td>Post estático</td><td>Existencia del canal</td></tr>
+    <tr><td>Mié</td><td>Primer fragmento de movimiento sin rostro visible, sin texto</td><td>Reel (8–12s)</td><td>Curiosidad, cero explicación</td></tr>
+    <tr><td>Vie</td><td>Carrusel: "¿Qué es una piel inversa?" — pregunta abierta, sin responder</td><td>Carrusel (4 slides)</td><td>Instalar el concepto</td></tr>
+    <tr><td>Dom</td><td>Historia con encuesta: "¿Alguna vez sentiste que cambiaste de piel?"</td><td>Historia</td><td>Interacción temprana</td></tr>
+  </table></div>
+
+  <div class="week-title">Semana 2 <span class="dates">Lun 5 – Dom 11 oct — <span class="phase-tag p1">Expectativa</span></span></div>
+  <div class="tablewrap"><table>
+    <tr><th>Día</th><th>Pieza</th><th>Formato</th><th>Objetivo</th></tr>
+    <tr><td>Lun</td><td>Presentación de la obra: sinopsis breve + créditos (curso, universidad, dirección)</td><td>Post estático</td><td>Contexto institucional</td></tr>
+    <tr><td>Mié</td><td>Primer BTS de ensayo: calentamiento colectivo</td><td>Reel (25–30s)</td><td>Mostrar el cuerpo del trabajo</td></tr>
+    <tr><td>Jue</td><td>Clip corto de Martha dirigiendo en sala: da una indicación, se ve el montaje tomando forma</td><td>Reel/entrevista corta</td><td>Presentar a la directora en acción</td></tr>
+    <tr><td>Sáb</td><td>Carrusel: "El ego frente al otro" — segunda capa conceptual</td><td>Carrusel</td><td>Profundizar sin resolver</td></tr>
+  </table></div>
+
+  <div class="week-title">Semana 3 <span class="dates">Lun 12 – Dom 18 oct — <span class="phase-tag p2">Proceso</span></span></div>
+  <div class="tablewrap"><table>
+    <tr><th>Día</th><th>Pieza</th><th>Formato</th><th>Objetivo</th></tr>
+    <tr><td>Lun</td><td>Perfil de bailarín/a #1 — quién es, qué mueve en la obra</td><td>Carrusel/Reel</td><td>Serie de elenco (arranca)</td></tr>
+    <tr><td>Mar</td><td><b>Intervención BTL #1</b> en plazoleta central de la universidad</td><td>Ver sección 6</td><td>Presencia física + tráfico a IG</td></tr>
+    <tr><td>Jue</td><td>Corrección en vivo: Martha ajustando una secuencia (clip auténtico, sin editar de más)</td><td>Reel (30–40s)</td><td>Exigencia del proceso</td></tr>
+    <tr><td>Vie</td><td>"¿Qué es la Licenciatura en Danza?" — post pensado para quien no es de artes</td><td>Carrusel</td><td>Abrir a otras facultades</td></tr>
+    <tr><td>Sáb</td><td>Perfil de bailarín/a #2</td><td>Carrusel/Reel</td><td>Serie de elenco</td></tr>
+  </table></div>
+
+  <div class="week-title">Semana 4 <span class="dates">Lun 19 – Dom 25 oct — <span class="phase-tag p2">Proceso</span></span></div>
+  <div class="tablewrap"><table>
+    <tr><th>Día</th><th>Pieza</th><th>Formato</th><th>Objetivo</th></tr>
+    <tr><td>Lun</td><td>Entrevista larga a Martha (video llamada editada): visión de dirección y "piel inversa"</td><td>IGTV/YouTube (5–7 min) + 2 recortes para Reels</td><td>Profundidad para público comprometido</td></tr>
+    <tr><td>Mié</td><td><b>Intervención BTL #2</b> en biblioteca o pasillos (más sutil, casi infiltrada)</td><td>Ver sección 6</td><td>Sorpresa, viralidad interna</td></tr>
+    <tr><td>Jue</td><td>Perfil de bailarín/a #3</td><td>Carrusel/Reel</td><td>Serie de elenco</td></tr>
+    <tr><td>Dom</td><td>Historia: "Faltan 2 semanas" + detrás de un ensayo largo</td><td>Historia + Reel</td><td>Marcar el tiempo</td></tr>
+  </table></div>
+
+  <div class="week-title">Semana 5 <span class="dates">Lun 26 oct – Dom 1 nov — <span class="phase-tag p3">Lanzamiento</span></span></div>
+  <div class="tablewrap"><table>
+    <tr><th>Día</th><th>Pieza</th><th>Formato</th><th>Objetivo</th></tr>
+    <tr><td>Lun</td><td>Revelación del póster oficial</td><td>Post estático</td><td>Imagen ancla de campaña</td></tr>
+    <tr><td>Mar</td><td>Tráiler de la obra (fragmentos editados de ensayo + tipografía)</td><td>Reel/video (40–60s)</td><td>Pieza central de conversión</td></tr>
+    <tr><td>Mié</td><td>Apertura de boletería: fecha, hora, lugar, valor, cómo reservar</td><td>Post + historia fija</td><td>Logística clara</td></tr>
+    <tr><td>Jue</td><td><b>Intervención BTL #3</b> en entrada principal / bloque de artes</td><td>Ver sección 6</td><td>Última convocatoria masiva</td></tr>
+    <tr><td>Vie–Dom</td><td>Countdown diario en historias (3, 2, 1 día) + ficha técnica completa</td><td>Historia + post</td><td>Urgencia</td></tr>
+  </table></div>
+
+  <div class="week-title">Semana 6 <span class="dates">Lun 2 – Dom 8 nov — <span class="phase-tag p4">Estreno</span></span></div>
+  <div class="tablewrap"><table>
+    <tr><th>Día</th><th>Pieza</th><th>Formato</th><th>Objetivo</th></tr>
+    <tr><td>Lun–Mar</td><td>Últimos recordatorios + backstage de montaje técnico (luces, tarima)</td><td>Historia + Reel</td><td>Cerrar expectativa</td></tr>
+    <tr><td>Día de estreno</td><td>Cobertura en vivo: llegada del público, backstage antes de escena, cierre con elenco</td><td>Historias en tiempo real</td><td>Presencia y comunidad</td></tr>
+    <tr><td>Día siguiente</td><td>Recap emocional: fotos de función, frases del público, agradecimiento a Martha y equipo</td><td>Carrusel + Reel</td><td>Cierre narrativo</td></tr>
+    <tr><td>Resto de semana</td><td>Funciones adicionales (si aplica) + testimonios cortos de espectadores</td><td>Reels/Historias</td><td>Sostener boca a boca</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>5. Entrevistas</h2>
+  <div class="card">
+    <ul class="checklist">
+      <li><b>Martha Echavarría</b> — dos momentos, ambos presenciales en sala: uno temprano (visión de dirección) y otro en semana 4 (proceso ya consolidado). Editar en versión larga + recortes cortos.</li>
+      <li><b>3–4 bailarinxs</b> — preguntas breves: por qué esta obra, qué es para ellxs "cambiar de piel", un momento difícil del proceso. Grabación simple, luz natural, sin set elaborado — coherente con la estética de proceso.</li>
+      <li><b>Voz docente/coordinación del programa</b> (opcional) — valida institucionalmente la obra ante público externo a la universidad.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>6. BTL — intervenciones en la universidad</h2>
+  <p class="lede">Fragmentos de la obra "toman" espacios cotidianos del campus: la superficie de lo académico se interrumpe por unos minutos. Coherente con la premisa de "piel inversa" — lo de adentro sale afuera.</p>
+  <div class="grid cols-2">
+    <div class="pillar"><b>BTL #1 — Plazoleta central</b><span>Intervención visible a mediodía, alto tránsito. Frontal, con público que se detiene a mirar. Grabar reacciones reales.</span></div>
+    <div class="pillar"><b>BTL #2 — Biblioteca / pasillos</b><span>Más sutil, casi infiltrada, sin anunciar. Genera efecto sorpresa y contenido más orgánico para compartir.</span></div>
+    <div class="pillar"><b>BTL #3 — Entrada / bloque de artes</b><span>Última semana antes del estreno. Incluye flyer físico con QR a Instagram/boletería, entregado por lxs mismxs bailarinxs.</span></div>
+    <div class="pillar"><b>Elementos comunes</b><span>Vestuario o maquillaje reconocible de la obra, cámara fija + una móvil para reacciones, corte a Reel en menos de 24h.</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>7. Métricas a seguir</h2>
+  <div class="card">
+    <p style="font-size:14px; margin:0">Alcance por Reel de proceso vs. Reel de concepto · guardados en carruseles conceptuales · clics al link de boletería en la última semana · vistas completas de historias en día de BTL · asistencia real vs. seguidores nuevos en semana de estreno.</p>
+  </div>
+</section>
+
+<section>
+  <h2>8. Checklist de producción</h2>
+  <p class="lede">Lo que hay que tener resuelto antes de grabar cada tipo de pieza — para repartir responsabilidades dentro del equipo de difusión.</p>
+
+  <h3>Equipo técnico por formato</h3>
+  <div class="grid cols-2">
+    <div class="pillar"><b>Reels / BTS</b><span>Celular gama media-alta · estabilizador o gimbal · micrófono lavalier · power bank</span></div>
+    <div class="pillar"><b>Entrevistas</b><span>Cámara o celular en trípode · 2 micrófonos lavalier (o de solapa) · luz de anillo o softbox · fondo neutro</span></div>
+    <div class="pillar"><b>BTL en vivo</b><span>2 cámaras/celulares (fija + móvil) · micrófono direccional (opcional) · batería/power bank extra</span></div>
+    <div class="pillar"><b>Póster / fotografía</b><span>Cámara réflex o celular de alta resolución · trípode · luces de estudio si es en interior</span></div>
+  </div>
+
+  <h3>Personas necesarias por pieza</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Pieza</th><th>Mínimo de personas</th><th>Roles</th></tr>
+    <tr><td>Reel de proceso/BTS</td><td>1–2</td><td>Grabación + edición (ideal: alguien dirigiendo la toma aparte de quien graba)</td></tr>
+    <tr><td>Entrevista</td><td>2–3</td><td>Cámara, sonido, entrevistador/a</td></tr>
+    <tr><td>Intervención BTL</td><td>3–4</td><td>2 personas grabando, 1 coordinando logística/permisos, 1 repartiendo flyers/QR</td></tr>
+    <tr><td>Cobertura en vivo del estreno</td><td>2</td><td>Historias en tiempo real + fotografía</td></tr>
+  </table></div>
+
+  <h3>Luces</h3>
+  <ul class="checklist">
+    <li>Luz natural para BTS diurno (evitar contraluz fuerte en plazoleta al mediodía)</li>
+    <li>Anillo LED o panel portátil para entrevistas en interior</li>
+    <li>Revisar con el técnico de iluminación de la obra qué luz del teatro se puede aprovechar para cobertura del estreno</li>
+  </ul>
+
+  <h3>Pendientes generales</h3>
+  <ul class="checklist">
+    <li>Permiso con Bienestar Universitario / decanatura para las 3 intervenciones BTL</li>
+    <li>Autorización de imagen firmada por lxs 19 estudiantes</li>
+    <li>Banco de música libre de derechos para Reels</li>
+    <li>Calendario de grabación compartido con el equipo (quién graba qué día)</li>
+    <li>Responsable fijo de publicación (quién sube y a qué hora cada pieza)</li>
+    <li>Presupuesto para impresión de flyers/QR de la BTL #3</li>
+    <li>Carpeta compartida (Drive) para material crudo antes de editar</li>
+    <li>Almacenamiento y batería de respaldo para el día del estreno</li>
+  </ul>
+</section>
+
+<section>
+  <h2>9. Cómo editar este documento</h2>
+  <div class="card">
+    <p style="font-size:14px; margin:0 0 10px">Este es un artefacto vivo: cuando el eje conceptual quede definido (o cambie cualquier otra cosa), dime en el chat qué texto reemplazar y en qué sección, y lo actualizo aquí mismo — el enlace no cambia, siempre queda la última versión.</p>
+    <p style="font-size:14px; margin:0">Para compartirlo con tus compañeros de difusión: envíales este mismo enlace, pueden abrirlo y leerlo directamente en el navegador. Si además quieres que ellos puedan pedirme cambios o duplicarlo para su propia cuenta, cuéntame y vemos la mejor forma.</p>
+  </div>
+</section>
+
+<footer>La Piel Inversa · Entrenamiento y montaje · Licenciatura en Danza, Universidad de Antioquia · Dir. Martha Echavarría</footer>
+</div>
+</body>
+</html>
